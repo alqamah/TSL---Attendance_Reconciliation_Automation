@@ -539,8 +539,9 @@ async function processPresenteeFile(file) {
                 let skillVal         = null;
                 let designationVal   = null;
                 let shiftsAllowedVal = [];
-                let inOtAllowed      = false;
-                let outOtAllowed     = false;
+                
+                let inOtAllowed      = true;
+                let outOtAllowed     = true;
 
                 const bypassMaster = bypassMasterFileCheckbox ? bypassMasterFileCheckbox.checked : false;
                 if (masterFileUploaded && !bypassMaster) {
