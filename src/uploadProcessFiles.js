@@ -221,8 +221,8 @@ function _finalizePipoProcessing(globalTempMap) {
         let skillVal         = null;
         let designationVal   = null;
         let shiftsAllowedVal = [];
-        let inOtAllowed      = false;
-        let outOtAllowed     = false;
+        let inOtAllowed      = true;
+        let outOtAllowed     = true;
         let nameVal          = emp.workmanName || '';  // default from CLM punch data
 
         const bypassMaster = bypassMasterFileCheckbox ? bypassMasterFileCheckbox.checked : false;
