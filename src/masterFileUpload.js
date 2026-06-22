@@ -100,8 +100,8 @@ function _parseEmployeeDetailsSheet(worksheet) {
             allowedShifts: _parseAllowedShifts(
                                get('allowedshifts') || get('allowedshift') || ''
                            ),
-            inOtAllowed:   _parseYesNo(get('inotallowed')  || get('inot')  || false),
-            outOtAllowed:  _parseYesNo(get('outotallowed') || get('outot') || false)
+            inOtAllowed:   _parseYesNo(get('inotallowed')  || get('inot')  || true),
+            outOtAllowed:  _parseYesNo(get('outotallowed') || get('outot') || true)
         };
 
         parsed.push(entry);
